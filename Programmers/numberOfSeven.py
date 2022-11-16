@@ -1,6 +1,6 @@
 # 프로그래머스 7의 개수
 # array 에 담긴 정수들 중 7의 개수를 리턴하는 함수 만들기.
-
+# [LJ001]
 def solution(array):
     answer = 0
     for a in array:
