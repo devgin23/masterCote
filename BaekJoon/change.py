@@ -1,4 +1,4 @@
-# 5585
+# 5585 greedy
 price = int(input())
 change = 1000-price
 coin = [500,100,50,10,5,1]
