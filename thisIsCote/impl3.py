@@ -6,3 +6,13 @@
 # 3이 3개인 경우 : 
 # 3이 4개인 경우 : 
 # 시간이 3시인 경우 : 3600
+
+h = int(input())
+
+count = 0
+for i in range(h+1):
+    for j in range(60):
+        for k in range(60):
+            if '3' in str(i) + str(j) + str(k):
+                count+=1
+print(count)
