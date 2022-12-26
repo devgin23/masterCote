@@ -25,3 +25,23 @@ def is_pair(s):
             break
         x = x+1 if w=="(" else x-1 if w==")" else x
     return x==0
+
+def solutionBae(s):
+    answer = True
+    stack = []
+    for i in range(len(s)) :        
+        if(s[0] == ')' or s[len(s)-1] == '(') :
+            answer = False
+            break
+            
+        stack.append(s[i])
+        
+        if s[i] == ')' :
+            stack.pop()
+            stack.pop()
+            
+    if len(stack) != 0 :
+        answer = False
+    print(answer)
+    return answer
+solutionBae('(()))))))))')
