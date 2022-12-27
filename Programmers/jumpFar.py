@@ -1,4 +1,4 @@
-# 멀리 뛰기
+# [프로그래머스] 멀리 뛰기
 # 2의 위치를 정해주는 것과 같다. (2가 여러개일 때의 조합)
 from math import factorial
 def solution(n):
@@ -20,6 +20,25 @@ def solution(n):
         c = factorial(i)%1234567
         case = int(a/b/c)
         answer += case
+    print(answer)
+    return answer
+# 피보나치 수열로 푼 풀이.
+def solution02(n):
+    answer = 0
+    num = [0]*2000
+    num[0] = 1
+    num[1] = 1
+    for i in range(2,n+1):
+        num[i] = (num[i-2]+num[i-1])%1234567
+    answer = num[n]
+    return answer
+# [프로그래머스] 피보나치 수열 풀이 가져옴.
+def solution(n):
+    answer = 0
+    num = [1,1]
+    for i in range(2,n+1):
+        num.append((num[i-2]+num[i-1])%1234567)
+    answer = num[-1]
     print(answer)
     return answer
 
