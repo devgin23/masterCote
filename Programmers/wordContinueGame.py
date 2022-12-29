@@ -29,6 +29,7 @@ solution(n,words)
 
 
 ### 위에는 len(set자료형) 비교해서 푼 내 풀이
+## 아래 풀이는 직관적이며 index와 turn 을 나머지와 몫으로 나타냈다는 것.
 ## 아래는 깔꼼쓰한 다름 사람 풀이
 
 def solution(n, words):
