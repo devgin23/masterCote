@@ -1,4 +1,4 @@
-# [프로그래머스] H-Index
+# [프로그래머스] H-Indexzz
 def solution(citations):
     answer = 0
     citations.sort(reverse=True)
@@ -16,3 +16,6 @@ def solution(citations):
 
 arr = [9,8,8,6,6,4,3,2,2,1,0]
 solution(arr)
+
+### 위는 테스트 케이스 9번만 틀리는 문제.
+### 
